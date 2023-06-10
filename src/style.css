@@ -1,1 +1,53 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#titulo {
+  color: white;
+  text-align: center;
+}
+
+#btn {
+  margin-top: 20px;
+}
+
+#showCard {
+  margin-top: 20px;
+  width: 280px;
+  height: 350px;
+  background-color: white;
+  position: relative;
+  font-size: 24px;
+  text-align: center;
+}
+
+.naipe {
+  position: absolute;
+  font-size: 48px;
+}
+
+.naipe-superior {
+  top: 0;
+  left: 0;
+}
+
+.naipe-inferior {
+  bottom: 0;
+  right: 0;
+}
+
+.numero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+}
