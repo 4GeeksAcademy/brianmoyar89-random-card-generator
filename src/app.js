@@ -52,6 +52,11 @@ function mostrarCartaAleatoria() {
   numeroElement.className = "numero";
   numeroElement.innerHTML = numeroCarta;
 
+  // Verificar si el naipe es "&diams;" o "&hearts;" y establecer el color rojo para el número
+  if (naipe.symbol === "&diams;" || naipe.symbol === "&hearts;") {
+    numeroElement.style.color = "red";
+  }
+
   // Actualizar el contenido del elemento <p> con la carta aleatoria
   showCardElement.innerHTML = "";
   showCardElement.appendChild(naipeSuperior);
